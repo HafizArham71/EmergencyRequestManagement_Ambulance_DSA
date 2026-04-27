@@ -1,3 +1,5 @@
+package Requests;
+
 public class Request {
 
     // Attributes
@@ -47,8 +49,9 @@ public class Request {
         this.priority = priority;
     }
 
+
     @Override
     public String toString() {
-        return String.format("Name: " + name + "\nLocation: " + location + "\nEmergency Status: " + status + "\nPriority: " + priority);
+        return String.format("Name: " + name + "\nRequests.Location: " + location + "\nEmergency Status: " + status + "\nPriority: " + priority);
     }
 }

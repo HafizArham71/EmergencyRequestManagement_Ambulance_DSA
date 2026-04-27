@@ -1,3 +1,5 @@
+package Requests;
+
 public class Location {
 
     // Attributes

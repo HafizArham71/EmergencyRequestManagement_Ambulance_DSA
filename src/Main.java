@@ -1,3 +1,9 @@
+import MinHeap.HeapTree;
+import MinHeap.Node;
+import Requests.EmergencyStatus;
+import Requests.Location;
+import Requests.Request;
+
 public class Main {
 
     public static int heartAttack = 1;
@@ -7,29 +13,29 @@ public class Main {
 
     static void main(String[] args) {
 
+        HeapTree heapTree = new HeapTree();
+
         Request r1 = new Request("Rahul1", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
+        Request r2 = new Request("Rahul2", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.HEART_ATTACK);
+        Request r3 = new Request("Rahul3", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.HEART_ATTACK);
+        Request r4 = new Request("Rahul4", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.INJURY);
+        Request r5 = new Request("Rahul5", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.ACCIDENT);
+        Request r6 = new Request("Rahul6", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
 
-        Request r2 = new Request("Rahul2", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
+        Node n1 = new Node(r1);
+        Node n2 = new Node(r2);
+        Node n3 = new Node(r3);
+        Node n4 = new Node(r4);
+        Node n5 = new Node(r5);
+        Node n6 = new Node(r6);
 
-        Request r3 = new Request("Rahul3", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
+        heapTree.addNode(n1);
+        heapTree.addNode(n2);
+        heapTree.addNode(n3);
+        heapTree.addNode(n4);
+        heapTree.addNode(n5);
+        heapTree.addNode(n6);
 
-        Request r4 = new Request("Rahul4", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
-
-        Request r5 = new Request("Rahul5", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
-
-        System.out.println(r1);
-        System.out.println(r2);
-        System.out.println(r3);
-        System.out.println(r4);
-        System.out.println(r5);
-    }
-
-    static int generatePriority(EmergencyStatus status) {
-        if(status == EmergencyStatus.HEART_ATTACK) {
-            if(heartAttack == 0 || )
-                heartAttack++;
-            else if
-        }
 
     }
 }

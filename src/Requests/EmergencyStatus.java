@@ -1,3 +1,5 @@
+package Requests;
+
 public enum EmergencyStatus {
 
     // Attributes
@@ -13,8 +15,8 @@ public enum EmergencyStatus {
     }
 
     // Methods
-
     public int getWeight() {
         return weight;
     }
+
 }

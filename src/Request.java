@@ -7,11 +7,11 @@ public class Request {
     private int priority;
 
     // Constructor
-    public Request(String name, Location location, EmergencyStatus status, int priority) {
+    public Request(String name, Location location, EmergencyStatus status) {
         this.name = name;
         this.location = location;
         this.status = status;
-        this.priority = priority;
+        this.priority = status.getWeight();
     }
 
     // Methods

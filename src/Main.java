@@ -1,21 +1,21 @@
 public class Main {
 
-    public static int heartAttack = 0;
-    public static int Accident = 0;
-    public static int injury = 0;
-    public static int fever = 0;
+    public static int heartAttack = 1;
+    public static int Accident = 2;
+    public static int injury = 3;
+    public static int fever = 4;
 
     static void main(String[] args) {
 
-        Request r1 = new Request("Rahul1", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER, 1);
+        Request r1 = new Request("Rahul1", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
 
-        Request r2 = new Request("Rahul2", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER, 1);
+        Request r2 = new Request("Rahul2", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
 
-        Request r3 = new Request("Rahul3", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER, 1);
+        Request r3 = new Request("Rahul3", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
 
-        Request r4 = new Request("Rahul4", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER, 1);
+        Request r4 = new Request("Rahul4", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
 
-        Request r5 = new Request("Rahul5", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER, 1);
+        Request r5 = new Request("Rahul5", new Location("College Stop", "Shalimar Garden", "Lahore", "Pakistan"), EmergencyStatus.FEVER);
 
         System.out.println(r1);
         System.out.println(r2);
@@ -28,7 +28,7 @@ public class Main {
         if(status == EmergencyStatus.HEART_ATTACK) {
             if(heartAttack == 0 || )
                 heartAttack++;
-            else if (heartAttack)
+            else if
         }
 
     }

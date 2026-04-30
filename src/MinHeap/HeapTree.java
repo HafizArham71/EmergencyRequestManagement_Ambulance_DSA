@@ -7,6 +7,7 @@ public class HeapTree {
     // Attributes
     private Node head;
     private Node tail;
+    private int counter = 0;
 
 
     private Node parent;
@@ -73,6 +74,7 @@ public class HeapTree {
                 parent = leftNode;
             }
         }
+        counter++;
         return null;
     }
 

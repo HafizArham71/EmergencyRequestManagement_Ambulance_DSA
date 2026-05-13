@@ -1,3 +1,5 @@
+package Donor;
+
 public class Location {
 
     // Attributes
